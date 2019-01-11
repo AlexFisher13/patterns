@@ -38,6 +38,16 @@ public class Human implements Copyable {
     }
 
     public Object copy() {
-        return null;
+        Human copy = new Human(name, age, sex);
+        return copy;
+    }
+
+    @Override
+    public String toString() {
+        return "Human{" +
+                "name='" + name + '\'' +
+                ", age=" + age +
+                ", sex=" + sex +
+                '}';
     }
 }
